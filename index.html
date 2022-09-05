@@ -7,10 +7,11 @@
         <title>Petshop</title>
         <link rel="shortcut icon" href="imagenes/logo.jpg" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
     </head>
     <body>
         <div id="contenedor">
-            <nav id="nav" class="nav">   
+            <nav id="nav" class="nav wow animate__backInDown" data-wow-duration="1s">   
                 <a href="index.html"> 
                     <img src="imagenes/logo.jpg" alt="logo">
                 </a>           
@@ -33,23 +34,23 @@
                 </ul>          
             </nav>
             <header id="header">
-                <h1 class="estiloTitulos">MCQUEEN PETSHOP</h1>  
-                <img class="tamañoImagen" src="imagenes/portada.jpg" alt="portada">
+                <h1 class="estiloTitulos wow animate__fadeIn" data-wow-duration="3s">MCQUEEN PETSHOP</h1>  
+                <img class="tamañoImagen wow animate__fadeIn" data-wow-duration="2s" src="imagenes/portada.jpg" alt="portada">
             </header>
             <main id="main">
-                <section class="sectionindex">
+                <section class="sectionindex wow animate__slideInLeft scale" data-wow-duration="2s">
                     <h2 class="estiloSubtitulos">Productos</h2>
                     <p class="colorFondoParrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deserunt sit repellendus, doloribus praesentium veniam mollitia enim nulla tempora itaque quos pariatur ex perspiciatis iure ratione, veritatis sequi. Eaque, maiores.</p>
                 </section>
-                <section class="sectionindex">
+                <section class="sectionindex wow animate__slideInLeft scale" data-wow-duration="2s">
                     <h2 class="estiloSubtitulos">Promociones</h2>
                     <p class="colorFondoParrafos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, voluptate dolore vero quas consequuntur magnam tenetur dignissimos facere iure consectetur ea eos quasi iusto aliquid, quod libero molestiae. Exercitationem, delectus.</p>
                 </section>
-                <section class="sectionindex">   
+                <section class="sectionindex wow animate__slideInRight scale" data-wow-duration="2s">   
                     <h2 class="estiloSubtitulos">Suscripciones</h2>
                     <p class="colorFondoParrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deserunt sit repellendus, doloribus praesentium veniam mollitia enim nulla tempora itaque quos pariatur ex perspiciatis iure ratione, veritatis sequi. Eaque, maiores.</p>
                 </section>
-                <section class="sectionindex">
+                <section class="sectionindex wow animate__slideInRight scale" data-wow-duration="2s">
                     <h2 class="estiloSubtitulos">Contacto</h2>
                     <p class="colorFondoParrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deserunt sit repellendus, doloribus praesentium veniam mollitia enim nulla tempora itaque quos pariatur ex perspiciatis iure ratione, veritatis sequi. Eaque, maiores.</p>
                 </section>
@@ -57,15 +58,19 @@
             <footer id="footer" class="bg-ofi">
                     <h4>Seguinos en nuestras redes sociales</h4>
                     <a href="#"> 
-                        <img src="imagenes/whatsapp.png" alt="Whatsapp">
+                        <img class="wow animate__backInUp" data-wow-duration="0.5s" src="imagenes/whatsapp.png" alt="Whatsapp">
                     </a>
                     <a href="#"> 
-                        <img src="imagenes/Facebook-icon.png" alt="Facebook">
+                        <img class="wow animate__backInUp" data-wow-duration="0.5s" src="imagenes/Facebook-icon.png" alt="Facebook">
                     </a>
                     <a href="#"> 
-                        <img src="imagenes/instagram.png" alt="Instagram">
+                        <img class="wow animate__backInUp" data-wow-duration="0.5s" src="imagenes/instagram.png" alt="Instagram">
                     </a>
             </footer>
         </div>    
+        <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     </body>
 </html>
