@@ -1,0 +1,49 @@
+.colorFondoAzul{
+    background-color: #a1cfe5c9;
+
+}
+
+.colorFondoAzulOscuro{
+    background-color: #236685e7;
+    color: white;
+
+}
+
+.colorLetra{
+    color: white;
+}
+
+.tamañoLogo{
+    width: 80px;
+}
+
+.tamañoHeader{
+    height: 80vh;
+}
+
+.alineado{
+    text-align: center;
+}
+
+body{
+    background-image: url(../imagenes/fondo.jpg);
+}
+
+
+nav ul li a:hover{  /*Cuando el cursor pase por encima pasará a cumplir las siguientes propiedades*/
+    font-size: 1.1rem;
+    text-decoration: underline solid;
+}
+
+.bg-ofi{
+    background-color: #256684;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: auto;
+}
+
+.tamañoProductos{
+    display: grid;
+    align-items: stretch;
+}
