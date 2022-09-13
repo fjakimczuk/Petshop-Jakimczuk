@@ -1,94 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Petshop</title>
-        <link rel="shortcut icon" href="imagenes/logo.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div id="suscripcion">
-            <nav class="nav" id="nav">
-                <a href="index.html"> 
-                    <img src="imagenes/logo.jpg" alt="logo">
-                </a>       
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/boostrap.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <title>Mcqueen petshop</title>
+  </head>
+  <body>
+        <!--Inicia la nav-->
+        <nav class="navbar navbar-expand-lg navbar-light colorFondoAzul sticky-top">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="tamañoLogo" src="./imagenes/logo.jpg" alt="Logotipo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                        <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                        <li><a class="dropdown-item" href="#">Higiene y limpieza</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./promociones.html">Promociones</a>
                     </li>
-                    <li>
-                        <a href="Productos.html">Productos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./suscripciones.html">Suscripciones</a>
                     </li>
-                    <li>
-                        <a href="Promociones.html">Promociones</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
-                    <li>
-                        <a href="Suscripciones.html">Suscripciones</a>
-                    </li>
-                    <li>
-                        <a href="Contacto.html">Contacto</a>
-                    </li>
-                </ul>                  
-            </nav>
-            <header id="header">
-                <h1 class="estiloTitulos">SUSCRIPCIONES</h1>
-                <img src="imagenes/suscripcion.jpg" alt="panel de suscripciones"> 
-                <p >Suscribite a Mcqueen Petshop y obtené los mejores beneficios para tus peluditos</p>
+                </ul>
+
+                </form>
+            </div>
+            </div>
+        </nav>
+            <!--Termina la nav-->
+            <!--Empieza el header-->
+            <header>
+                <h1 class="alineado colorFondoAzulOscuro">SUSCRIPCIONES</h1> 
+                <img src="imagenes/suscripciones3.png" alt="Suscripciones" class="tamañoHeader">
+                <p class="estiloSubtitulos">Suscribite a Mcqueen Petshop y obtené los mejores beneficios para tus peluditos</p>
             </header>
-            <main id="suscripciones">
-                <section class="sectionsuscripciones">
-                    <h2 class="colorBlackTitulo">Pack Black</h2>
-                    <article class="colorBlackContenido">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eveniet soluta natus dicta impedit molestias numquam at modi, ullam porro consequuntur quis perspiciatis ut cumque, tempora iure unde ipsa deserunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, similique aliquam dolorem facilis, impedit culpa rerum consectetur ad ipsa deserunt ab maxime velit distinctio, vel atque nulla ullam inventore molestiae?</p>
-                    </article>
-                </section>
-                <section class="sectionsuscripciones">
-                    <h2 class="colorGoldTitulo">Pack Gold</h2>
-                    <article class="colorGoldContenido">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi nulla autem modi aut labore fuga laboriosam harum quaerat commodi aperiam illo, officia, vel odio repellendus. Itaque doloribus eius magni ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum quidem maxime possimus itaque, omnis neque voluptatem impedit et sit earum blanditiis iusto reprehenderit eaque qui. Facere autem nulla laborum.</p>
-                    </article>
-                </section>
-                <section class="sectionsuscripciones">
-                    <h2 class="colorSilverTitulo">Pack Silver</h2>
-                    <article class="colorSilverContenido">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ipsum fuga repellendus dolores corrupti magni id nihil sapiente provident soluta molestiae, ut deserunt accusamus eum facilis aut amet officiis consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptate assumenda, quos magni doloremque omnis labore dignissimos esse! Autem magnam aperiam adipisci deserunt ea quo ipsum quos saepe velit repudiandae!</p>
-                    </article>
-                </section>
+            <!--Termina el header-->
+            <!--Empieza el main-->
+
+            <main>
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3">
+                    <div class="col">
+                    <div class="card h-100">
+                        <img src="./imagenes/black.JPG" class="card-img-top" alt="clase black">
+                        <div class="card-body">
+                        <h5 class="card-title colorBlackTitulo">Pack Black</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum est natus laudantium, ullam eos, cumque optio iste atque quod placeat adipisci, esse officia repellendus dolorem at quisquam exercitationem ratione repellat.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card h-100">
+                        <img src="./imagenes/platino.JPG" class="card-img-top" alt="clase platino">
+                        <div class="card-body">
+                        <h5 class="card-title colorSilverTitulo">Pack Platinum</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam vel rerum beatae dolor minima hic. In id unde eum earum accusamus saepe excepturi, vitae assumenda doloremque animi minima recusandae quae.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card h-100">
+                        <img src="./imagenes/gold.JPG" class="card-img-top" alt="clase gold">
+                        <div class="card-body">
+                        <h5 class="card-title colorGoldTitulo">Pack Gold</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio unde qui id tempora cum iure ab error exercitationem suscipit, laboriosam, fugit illum itaque quod sint sed dolores. Natus, mollitia cum.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </main>
-            <aside id="formulario">
-                <section>
+            <!--Termina el main-->
+            <!--Empieza el formulario-->
+            <aside class="formulario">
+                <section class="sectionsuscripciones">
                     <h3 class="estiloSubtitulos">Formulario de suscripción</h3>
                     <p class="colorFondoParrafos">Envíenos sus datos y lo contactaremos en las próximas 72 hs</p>
+
                     <form>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre">
-                        <br>
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido">
-                        <br>
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email">
-                        <br>
-                        <br>
-                        <input type="reset" value="Cancelar">
-                        <input type="submit" value="Enviar">
+                        <div class="mb-3">
+                            <label for="Nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email">
+                        <button type="reset" class="btn btn-primary">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </section>
             </aside>
-            <footer class="bg-ofi" id="footer">
+            <!--Termina el formulario-->
+            <!--Empieza el footer-->
+            <footer class="bg-ofi">
                 <h4>Seguinos en nuestras redes sociales</h4>
                 <a href="#"> 
-                    <img src="imagenes/whatsapp.png" alt="Whatsapp">
+                    <img class="wow animate__backInUp" data-wow-duration="0.5s" src="./imagenes/whatsapp.png" alt="Whatsapp">
                 </a>
                 <a href="#"> 
-                    <img src="imagenes/Facebook-icon.png" alt="Facebook">
+                    <img class="wow animate__backInUp" data-wow-duration="0.5s" src="./imagenes/Facebook-icon.png" alt="Facebook">
                 </a>
                 <a href="#"> 
-                    <img src="imagenes/instagram.png" alt="Instagram">
+                    <img class="wow animate__backInUp" data-wow-duration="0.5s" src="./imagenes/instagram.png" alt="Instagram">
                 </a>
             </footer>
-        </div>
+            <!--Termina el footer-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <script src="js/wow.min.js"></script>
+                <script>
+                    new WOW().init();
+                </script>     
     </body>
 </html>

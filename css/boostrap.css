@@ -18,7 +18,8 @@
 }
 
 .tamañoHeader{
-    height: 80vh;
+    height: 60vh;
+    width: 100vw;
 }
 
 .alineado{
@@ -46,4 +47,107 @@ nav ul li a:hover{  /*Cuando el cursor pase por encima pasará a cumplir las sig
 .tamañoProductos{
     display: grid;
     align-items: stretch;
+}
+
+
+
+/* SUSCRIPCIONES*/
+
+.colorBlackTitulo{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: solid 5px rgb(97, 97, 97);
+    font-family:'Open Sans', sans-serif;
+    margin: 0px;
+}
+.colorBlackContenido{
+    background-color: white;
+    color:black;
+    font-family:'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 0px;
+}
+
+.colorGoldTitulo{
+    background-color: darkkhaki;
+    color: black;
+    text-align: center;
+    border: solid 5px rgb(125, 122, 73);
+    font-family:'Open Sans', sans-serif;
+    margin: 0px;
+}
+.colorGoldContenido{
+    background-color: rgb(247, 244, 208);
+    color: black;
+    font-family:'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 0px;
+}
+
+.colorSilverTitulo{
+    background-color: silver;
+    color: black;
+    text-align: center;
+    border: solid 5px rgb(118, 118, 118);
+    font-family:'Open Sans', sans-serif;
+    margin: 0px;
+}
+.colorSilverContenido{
+    background-color: rgb(237, 235, 235);
+    color: black;
+    font-family:'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 0px;
+}
+
+.estiloTitulos{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    background-color: rgb(161, 188, 219);
+    font-family:'Open Sans', sans-serif;
+    margin-top: 0px;
+}
+
+.estiloSubtitulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+    background-color: rgb(161, 188, 219);
+    font-family:'Open Sans', sans-serif;
+    margin: 0px;
+}
+
+.colorFondoParrafos{
+    background-color: white;
+    padding: 10px;
+}
+
+header p{
+    font-size: 2rem;
+    color: black;
+    text-decoration: solid;
+    text-align: center;
+    height: 85px;
+    font-family:'Open Sans', sans-serif;
+}
+
+.sectionsuscripciones{
+    width: 100%;
+    background-color: white;
+}
+
+.formulario{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.leyenda{
+    display: flex;
+    position: sticky;
 }
