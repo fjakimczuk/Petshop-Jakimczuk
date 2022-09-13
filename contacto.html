@@ -1,75 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Petshop</title>
-        <link rel="shortcut icon" href="imagenes/logo.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <nav class="nav">
-            <a href="index.html"> 
-                <img src="imagenes/logo.jpg" alt="logo">
-            </a>       
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/boostrap.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <title>Mcqueen petshop</title>
+  </head>
+  <body>
+    <!--Inicia la nav-->
+    <nav class="navbar navbar-expand-lg navbar-light colorFondoAzul sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img class="tamañoLogo" src="./imagenes/logo.jpg" alt="Logotipo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Alimentos</a></li>
+                      <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                      <li><a class="dropdown-item" href="#">Higiene y limpieza</a></li>
+                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="./promociones.html">Promociones</a>
                 </li>
-                <li>
-                    <a href="Productos.html">Productos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./suscripciones.html">Suscripciones</a>
                 </li>
-                <li>
-                    <a href="Promociones.html">Promociones</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
                 </li>
-                <li>
-                    <a href="Suscripciones.html">Suscripciones</a>
-                </li>
-                <li>
-                    <a href="Contacto.html">Contacto</a>
-                </li>
-            </ul>             
-        </nav>
+            </ul>
+
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    <!--Termina la nav-->
         <header>
-            <h1 class="estiloTitulos">CONTACTO</h1>
-            <p>En Mcqueen Petshop nos interesa tu opinión</p>   
+            <h1 class="alineado colorFondoAzulOscuro">CONTACTO</h1>
+            <p class="estiloSubtitulos">En Mcqueen Petshop nos interesa tu opinión</p>   
         </header>
         <main>
-            <form>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido">
-                <br>
-                <br>
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email">
-                <br>
-                <br>
-                <label for="telefono">Telefono</label>
-                <input type="tel" id="telefono">
-                <br>
-                <br>
-                <label for="comentario">Dejanos tu mensaje</label>
-                <br>
-                <textarea name="" id="comentario" cols="100" rows="10"></textarea>
-                <br>
-                <input type="reset" value="Cancelar">
-                <input type="submit" value="Enviar">
-            </form>
+            <aside class="formulario">
+                <section class="sectionsuscripciones">
+                    <h3 class="colorFondoAzulOscuro alineado">Formulario de contacto</h3>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="Nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Comentario" class="form-label">Dejanos tu mensaje</label>
+                            <input type="text" class="form-control" id="comentario">
+                        </div>
+                        <button type="reset" class="btn btn-primary">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </section>
+            </aside>
         </main>
-        <footer class="bg-ofi">
-            <h4>Seguinos en nuestras redes sociales</h4>
-            <a href="#"> 
-                <img src="imagenes/whatsapp.png" alt="Whatsapp">
-            </a>
-            <a href="#"> 
-                <img src="imagenes/Facebook-icon.png" alt="Facebook">
-            </a>
-            <a href="#"> 
-                <img src="imagenes/instagram.png" alt="Instagram">
-            </a>
-    </footer>
+
+        <!--Empieza el footer-->
+    <footer class="bg-ofi">
+        <h4>Seguinos en nuestras redes sociales</h4>
+        <a href="#"> 
+            <img class="wow animate__backInUp" data-wow-duration="0.5s" src="./imagenes/whatsapp.png" alt="Whatsapp">
+        </a>
+        <a href="#"> 
+            <img class="wow animate__backInUp" data-wow-duration="0.5s" src="./imagenes/Facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="#"> 
+            <img class="wow animate__backInUp" data-wow-duration="0.5s" src="./imagenes/instagram.png" alt="Instagram">
+        </a>
+</footer>
+    <!--Termina el footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     </body>
 </html>
