@@ -1,0 +1,48 @@
+body {
+  background-image: url(../imagenes/fondo.jpg);
+}
+
+.estiloTitulos {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(35, 102, 133, 0.9058823529);
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0px;
+}
+
+.estiloSubtitulos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(161, 207, 229, 0.7882352941);
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+}
+
+.alineado {
+  text-align: center;
+}
+
+nav {
+  background-color: rgba(161, 207, 229, 0.7882352941);
+}
+nav img {
+  width: 80px;
+}
+nav ul li a:hover {
+  font-size: 1.1rem;
+  -webkit-text-decoration: underline solid;
+          text-decoration: underline solid;
+}
+
+.bg-ofi {
+  background-color: rgba(35, 102, 133, 0.9058823529);
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+}

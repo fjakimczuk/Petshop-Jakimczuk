@@ -1,0 +1,19 @@
+nav{
+    background-color: $colorFondoSecundario;
+    img{
+        width: $widthLogo;
+    }
+    ul{
+        li{
+            a{  
+                &:hover{
+                    font-size: $fontSizeSm;
+                    text-decoration: underline solid;
+                }
+            }
+        }
+    }
+}
+
+
+

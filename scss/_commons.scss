@@ -1,0 +1,48 @@
+//IMAGEN FONDO
+$imagenFondo: url(../imagenes/fondo.jpg);
+
+//COLOR FONDO
+$colorFondoPrimario:#236685e7;
+$colorFondoSecundario:#a1cfe5c9;
+$colorFondoTerciario:rgb(161, 188, 219);
+$colorFondoCuaternario:white;
+
+
+//COLOR LETRAS
+$colorLetrasPrimario:white;
+$colorLetrasSecundario:black;
+
+body{
+    background-image: $imagenFondo;
+}
+
+.estiloTitulos{
+    font-size: $fontSizeMd;
+    text-align: $alineacionCentro;
+    color: $colorLetrasPrimario;
+    background-color: $colorFondoPrimario;
+    font-family: $fontFamily;
+    margin-top: 0px;
+}
+
+.estiloSubtitulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $fontSizeMd;
+    text-align: $alineacionCentro;
+    color: $colorLetrasPrimario;
+    background-color: $colorFondoSecundario;
+    font-family:$fontFamily;
+    margin: 0px;
+}
+
+$widthLogo: 80px;
+
+.alineado{
+    text-align: $alineacionCentro;
+}
+
+
+
+
