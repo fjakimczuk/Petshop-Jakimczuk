@@ -16,14 +16,6 @@ body{
     background-image: $imagenFondo;
 }
 
-.estiloTitulos{
-    font-size: $fontSizeMd;
-    text-align: $alineacionCentro;
-    color: $colorLetrasPrimario;
-    background-color: $colorFondoPrimario;
-    font-family: $fontFamily;
-    margin-top: 0px;
-}
 
 .estiloSubtitulos{
     display: flex;
@@ -43,6 +35,89 @@ $widthLogo: 80px;
     text-align: $alineacionCentro;
 }
 
+//MIXIN
+
+@mixin Encabezados ($size, $alineacion, $fuente){
+    font-size: $size;
+    text-align: $alineacion;
+    font-family: $fuente;
+    margin-top: 0px;
+}
+
+.encabezados{
+    @include Encabezados($fontSizeMd,$alineacionCentro,$fontFamily)
+}
 
 
+//EXTEND
 
+.encabezadoDarkBlue{
+    @extend .encabezados;
+    color:white;
+}
+
+.encabezadoBlack{
+    @extend .encabezados;
+    border:solid 5px rgb(97, 97, 97);
+    color:white;
+}
+
+.encabezadoGold{
+    @extend .encabezados;
+    border: solid 5px rgb(125, 122, 73);
+    color: black;
+}
+
+.encabezadoSilver{
+    @extend .encabezados;
+    border: solid 5px rgb(118, 118, 118);
+    color: black;
+}
+
+
+//MAPA
+
+$paleta:(
+    'uno':#236685e7,
+    'dos': #a1cfe5c9,
+    'tres': rgb(161, 188, 219),
+    'cuatro':black,
+    'cinco':silver,
+    'seis': darkkhaki,
+    );
+
+.bg-color1 {
+    background-color: map-get($map: $paleta, $key:'uno');
+}
+
+.bg-color2 {
+    background-color: map-get($map: $paleta, $key:'dos');
+}
+
+.bg-color3 {
+    background-color: map-get($map: $paleta, $key:'tres');
+}
+
+.bg-color4 {
+    background-color: map-get($map: $paleta, $key:'cuatro');
+}
+
+.bg-color5 {
+    background-color: map-get($map: $paleta, $key:'cinco');
+}
+
+.bg-color6 {
+    background-color: map-get($map: $paleta, $key:'seis');
+}
+
+.estiloSubtitulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+    background-color: rgb(161, 188, 219);
+    font-family:'Open Sans', sans-serif;
+    margin: 0px;
+}
