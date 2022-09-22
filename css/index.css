@@ -2,15 +2,6 @@ body {
   background-image: url(../imagenes/fondo.jpg);
 }
 
-.estiloTitulos {
-  font-size: 1.5rem;
-  text-align: center;
-  color: white;
-  background-color: rgba(35, 102, 133, 0.9058823529);
-  font-family: "Open Sans", sans-serif;
-  margin-top: 0px;
-}
-
 .estiloSubtitulos {
   display: flex;
   align-items: center;
@@ -25,6 +16,68 @@ body {
 
 .alineado {
   text-align: center;
+}
+
+.encabezados, .encabezadoSilver, .encabezadoGold, .encabezadoBlack, .encabezadoDarkBlue {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0px;
+}
+
+.encabezadoDarkBlue {
+  color: white;
+}
+
+.encabezadoBlack {
+  border: solid 5px rgb(97, 97, 97);
+  color: white;
+}
+
+.encabezadoGold {
+  border: solid 5px rgb(125, 122, 73);
+  color: black;
+}
+
+.encabezadoSilver {
+  border: solid 5px rgb(118, 118, 118);
+  color: black;
+}
+
+.bg-color1 {
+  background-color: rgba(35, 102, 133, 0.9058823529);
+}
+
+.bg-color2 {
+  background-color: rgba(161, 207, 229, 0.7882352941);
+}
+
+.bg-color3 {
+  background-color: rgb(161, 188, 219);
+}
+
+.bg-color4 {
+  background-color: black;
+}
+
+.bg-color5 {
+  background-color: silver;
+}
+
+.bg-color6 {
+  background-color: darkkhaki;
+}
+
+.estiloSubtitulos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  background-color: rgb(161, 188, 219);
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
 }
 
 nav {
@@ -45,4 +98,8 @@ nav ul li a:hover {
   text-align: center;
   align-items: center;
   font-size: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
 }
