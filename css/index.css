@@ -1,21 +1,6 @@
+@charset "UTF-8";
 body {
   background-image: url(../imagenes/fondo.jpg);
-}
-
-.estiloSubtitulos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  text-align: center;
-  color: white;
-  background-color: rgba(161, 207, 229, 0.7882352941);
-  font-family: "Open Sans", sans-serif;
-  margin: 0px;
-}
-
-.alineado {
-  text-align: center;
 }
 
 .encabezados, .encabezadoSilver, .encabezadoGold, .encabezadoBlack, .encabezadoDarkBlue {
@@ -46,10 +31,12 @@ body {
 
 .bg-color1 {
   background-color: rgba(35, 102, 133, 0.9058823529);
+  color: white;
 }
 
 .bg-color2 {
   background-color: rgba(161, 207, 229, 0.7882352941);
+  color: black;
 }
 
 .bg-color3 {
@@ -68,6 +55,10 @@ body {
   background-color: darkkhaki;
 }
 
+.bg-color7 {
+  background-color: white;
+}
+
 .estiloSubtitulos {
   display: flex;
   align-items: center;
@@ -78,6 +69,21 @@ body {
   background-color: rgb(161, 188, 219);
   font-family: "Open Sans", sans-serif;
   margin: 0px;
+}
+
+.alineado {
+  text-align: center;
+}
+
+.tamañoHeader {
+  height: 60vh;
+  width: 100vw;
+}
+
+aside section {
+  background-color: white;
+  width: 100%;
+  padding: 50px;
 }
 
 nav {
