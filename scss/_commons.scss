@@ -16,25 +16,6 @@ body{
     background-image: $imagenFondo;
 }
 
-
-.estiloSubtitulos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: $fontSizeMd;
-    text-align: $alineacionCentro;
-    color: $colorLetrasPrimario;
-    background-color: $colorFondoSecundario;
-    font-family:$fontFamily;
-    margin: 0px;
-}
-
-$widthLogo: 80px;
-
-.alineado{
-    text-align: $alineacionCentro;
-}
-
 //MIXIN
 
 @mixin Encabezados ($size, $alineacion, $fuente){
@@ -84,14 +65,17 @@ $paleta:(
     'cuatro':black,
     'cinco':silver,
     'seis': darkkhaki,
+    'siete':white,
     );
 
 .bg-color1 {
     background-color: map-get($map: $paleta, $key:'uno');
+    color: $colorLetrasPrimario;
 }
 
 .bg-color2 {
     background-color: map-get($map: $paleta, $key:'dos');
+    color: $colorLetrasSecundario;
 }
 
 .bg-color3 {
@@ -110,14 +94,36 @@ $paleta:(
     background-color: map-get($map: $paleta, $key:'seis');
 }
 
+.bg-color7 {
+    background-color: map-get($map: $paleta, $key:'siete');
+}
+
+
 .estiloSubtitulos{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    text-align: center;
-    color: black;
-    background-color: rgb(161, 188, 219);
-    font-family:'Open Sans', sans-serif;
+    font-size: $fontSizeMd;
+    text-align: $alineacionCentro;
+    color: $colorLetrasSecundario;
+    background-color: $colorFondoTerciario;
+    font-family:$fontFamily;
     margin: 0px;
 }
+
+.alineado{
+    text-align: $alineacionCentro;
+}
+
+.tamañoHeader{
+    height: 60vh;
+    width: 100vw;
+}
+
+aside {
+        section{
+                background-color: map-get($map: $paleta, $key: 'siete');
+                width: 100%;
+                padding: 50px;
+        }
+    }
